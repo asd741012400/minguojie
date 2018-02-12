@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>分享页</title>
+	<link rel="stylesheet" href="css/public.css">
+	<link rel="stylesheet" href="css/share.css">
+	<script src='js/common.js'></script>
+	<script src='js/jquery.js'></script>
+	<script src="js/jweixin-1.2.0.js"></script>
+	
+	
+</head>
+<body>
+<div class="share full_screen">
+	<h1><img src="images/share_logo.png" alt=""></h1>
+	<h2><img src="images/contact.png" alt=""></h2>
+	<ul>
+		<li class="highlight" onclick=" window.location.href = 'https://mp.weixin.qq.com/s?__biz=MzI2ODc0NDcwNA==&mid=2247483717&idx=1&sn=66d67704fe7a46b09afc227a75aca538&chksm=eaeba02add9c293cf24d1752dc4875f977e65a305b9321d63f0ddd8f240f1b53a9676902a110&mpshare=1&scene=1&srcid=09252W3DOgjuxwiBSaT1vIYb#rd' "><a href="#"><img src="images/share_product1.png" alt=""></a></li>
+		<li><a href="#"><img src="images/share_product2.png" alt=""></a></li>
+		<li><a href="#"><img src="images/share_product3.png" alt=""></a></li>
+	</ul>
+	<button></button>
+</div>	
+
+
+
+<div class="tan full_screen">
+	<p><img src="images/shareArrows.png" alt=""></p>
+	<span>我知道了</span>
+</div>
+<script src="js/weixRequest.js"></script>
+
+<script>
+$('button').bind('click',function(){
+	$('.tan').css('display','block')
+})
+$('.tan span').bind('click',function(){
+	$('.tan').css('display','none')
+})
+</script>
+
+</body>
+</html>

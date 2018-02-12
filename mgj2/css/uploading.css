@@ -1,0 +1,74 @@
+.uploading{
+	background: url('../images/uploading_bg.jpg') no-repeat;
+	background-size: 100% 100%;
+	overflow: hidden;
+}
+.uploading h1{
+	width: 5.82rem;
+	height: 0.56rem;
+	background: url('../images/uploading_font.png') center/100% 100% no-repeat;
+	margin-top: 1.33rem;
+}
+
+@keyframes toScale
+{
+	from {transform: scale(1, 1);}
+	to {transform: scale(1.1, 1.1);}
+}
+
+.uploading h2{
+	font-size: 0.28rem; 
+	line-height: 0.4rem; 
+	text-align: center;
+	animation:toScale 0.6s;
+	animation-iteration-count:infinite;
+	animation-direction:alternate;
+	position: relative;
+	display: block;
+}
+.uploading h2.first_h2{
+	margin-top: 0.5rem;
+}
+
+.uploading input#img{
+	display: none;
+}
+.uploading div{
+	width: 3.45rem;
+	height: 4.78rem;
+	background: url('../images/add.png') center/100% 100% no-repeat;
+	margin-top: 0.3rem;
+	position: relative;
+	overflow: hidden;
+}
+.uploading div img{
+	display: none; 
+	position: absolute;
+}
+.uploading div input{
+	opacity: 0;
+	width: 3.45rem;
+	height: 5.46rem;
+	float: left;
+}
+
+.uploading button{
+	display: block;
+	width: 2.36rem;
+	height: 0.79rem;
+	background: url(../images/uploading.png) center/100% 100%  no-repeat;
+	margin-top: 0.3rem;
+	border: 0;
+}
+.uploading p{
+	position: absolute;
+	background: url(../images/logo.png) center/100% 100%  no-repeat;
+	width: 2.45rem;
+	height: 0.52rem;
+	bottom: 0.64rem;
+	left: 50%;
+	margin-left: -1.24rem;
+}
+
+
+

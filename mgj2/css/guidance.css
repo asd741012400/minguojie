@@ -1,0 +1,128 @@
+html,body{
+	height: auto;
+}
+
+.guidance ul li:last-of-type{
+	position: relative;
+}
+.guidance ul li p{
+	overflow: hidden;
+}
+.guidance ul li:last-of-type p{
+	position: absolute;
+	z-index: -1; 
+	width: 100%;
+}
+.guidance ul li div.arrows{
+	overflow: hidden;
+	padding: 2.1rem 0.36rem 1.5rem;
+}
+.guidance ul li div.arrows span{
+	width: 0.27rem;
+	height: 0.49rem;
+
+}
+
+@keyframes toLeft
+{
+	from {margin-left: 0%;}
+	to {margin-left: 2%;}
+}
+@keyframes toRight
+{
+	from {margin-right: 0%;}
+	to {margin-right: 2%;}
+}
+@keyframes toScale
+{
+	from {transform: scale(1, 1);}
+	to {transform: scale(1.3, 1.3);}
+}
+.guidance ul li div.arrows span:nth-of-type(1){
+	animation:toLeft 0.5s;
+	animation-iteration-count:infinite;
+	animation-direction:alternate;
+}
+.guidance ul li div.arrows span:nth-of-type(2){
+	animation:toRight 0.5s;
+	animation-iteration-count:infinite;
+	animation-direction:alternate;
+}
+.guidance ul li div.click{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	font-size: 0.24rem;
+	text-align: center;
+
+}
+.guidance ul li div.click span{
+	float: left;
+	width: 50%;
+	color: #382842 ;
+}
+.guidance ul li div.click span b{
+	font-weight: 500;
+	top: 1.1rem;
+	animation:toScale 0.4s;
+	animation-iteration-count:infinite;
+	animation-direction:alternate;
+	position: relative;
+	display: block;
+}
+
+
+.loading{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background: #eee;
+	top: 0;
+	left: 0;
+	font-size: 0.5rem;
+	text-align: center;
+
+}
+.loading div{
+	position: relative;
+}
+.loading div span{
+	width: 2rem;
+	display: block;
+	overflow: hidden;
+	position: relative;
+	transform-origin: center center;
+	-webkit-transform-origin: center center;
+	-webkit-animation: toRotate 1s infinite linear;
+	animation: toRotate 1s infinite linear;
+	z-index: 99999999;
+}
+.loading div p{
+	margin-top: 0.2rem;
+	color: #999;
+}
+
+@keyframes toRotate
+{
+	0%		
+	{
+		transform: rotate(0deg);		
+	}
+	100%	
+	{
+		transform: rotate(-360deg);
+	}
+}
+@-webkit-keyframes zd_chuizi
+{
+   0%		
+	{
+		transform: rotate(0deg);
+		
+	}
+	100%	
+	{
+		transform: rotate(-360deg);
+	}
+}

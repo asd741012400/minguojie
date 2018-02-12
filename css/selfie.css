@@ -1,0 +1,17 @@
+html,body,.selfie{
+	height: 100%;
+}
+.selfie{
+	background: url(../images/selfie_bg.gif) no-repeat;
+	background-size: 100% 100%; 
+}
+.selfie span{
+	width: 1.79rem;
+	height: 1.8rem;
+	background: url(../images/selfie.png) no-repeat;
+	background-size: 100%;
+	bottom: 0.68rem;
+	position: absolute;
+	left: 50%;
+	margin-left: -0.84rem;
+}
